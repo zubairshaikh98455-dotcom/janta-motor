@@ -1,0 +1,79 @@
+
+<!-- PHOTO & VIDEO GALLERY -->
+<section id="gallery" class="gallery-section">
+  <div class="gallery-container">
+    <h2>Our Photo & Video Gallery</h2>
+    <p>Explore our driving school, vehicles and training sessions.</p>
+
+    <h3>Our Photos</h3>
+    <div class="gallery-grid">
+      <img src="images/photo1.jpg" alt="Driving school">
+      <img src="images/photo2.jpg" alt="Car training">
+      <img src="images/photo3.jpg" alt="Driving practice">
+      <img src="images/photo4.jpg" alt="Training vehicle">
+    </div>
+
+    <h3>Our Videos</h3>
+    <div class="video-grid">
+      <video controls>
+        <source src="videos/video1.mp4" type="video/mp4">
+        Your browser does not support video.
+      </video>
+
+      <video controls>
+        <source src="videos/video2.mp4" type="video/mp4">
+        Your browser does not support video.
+      </video>
+    </div>
+  </div>
+</section>
+
+<style>
+.gallery-section {
+  padding: 60px 20px;
+  background: #f4f7fb;
+  text-align: center;
+}
+
+.gallery-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.gallery-section h2 {
+  font-size: 32px;
+  color: #102a43;
+}
+
+.gallery-section p {
+  color: #555;
+  margin-bottom: 35px;
+}
+
+.gallery-section h3 {
+  margin: 35px 0 20px;
+  color: #087f8c;
+}
+
+.gallery-grid,
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.gallery-grid img,
+.video-grid video {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 12px;
+  background: #ddd;
+  box-shadow: 0 4px 12px #0002;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+</style>
